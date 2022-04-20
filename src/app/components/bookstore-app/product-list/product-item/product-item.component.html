@@ -1,1 +1,13 @@
-<p>product-item works!</p>
+<div class="cad shadow-sm">
+  <div class="card-body">
+    <p class="card-text">{{ book.name }}</p>
+    <p class="card-text">{{ book.category }}</p>
+    <p class="card-text">{{ book.quantity }}</p>
+    <p class="card-text">{{ book.price | currency: 'BRL'}}</p>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-sm btn-primary">Comprar</button>
+    <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+
+  </div>
+</div>
